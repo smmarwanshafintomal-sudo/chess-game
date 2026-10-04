@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chess</h1>
+    <div class="controls">
+      <button id="btn-2p" class="active">2 Players</button>
+      <button id="btn-ai">vs AI</button>
+      <button id="btn-reset">New Game</button>
+    </div>
+    <div class="game-area">
+      <div class="board-wrapper">
+        <div id="board"></div>
+      </div>
+      <div class="sidebar">
+        <div id="status">White to move</div>
+        <div class="move-history">
+          <h3>Moves</h3>
+          <div id="moves-list"></div>
+        </div>
+        <div id="captured">
+          <div class="captured-row">
+            <span class="label">White captured:</span>
+            <span id="white-captured"></span>
+          </div>
+          <div class="captured-row">
+            <span class="label">Black captured:</span>
+            <span id="black-captured"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="chess.js"></script>
+  <script src="ai.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
